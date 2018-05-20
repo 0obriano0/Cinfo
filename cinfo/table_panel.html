@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="table_panel.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="table_panel.js"></script>
+    </head>
+    <body>
+        <div id="for_table">
+            <div class="table table_code">
+                <p>#include &lt;stdio.h&gt;</p>
+                <p>int main(void)</p>
+                <p>{</p>
+                <p id="text_timer_1" class="for_text_2">int LoopNum;</p>
+                <p id="text_timer_2" class="for_text_2">int Sum = 0;</p>
+                <p id="text_timer_3" class="for_text_2">for(LoopNum = 0; LoopNum &lt; 3; LoopNum++)</p>
+                <p class="for_text_2">{</p>
+                <p id="text_timer_4" class="for_text_4">Sum = Sum + LoopNum;</p>
+                <p id="text_timer_5" class="for_text_4">printf("Sum=%d\n",Sum);</p>
+                <p id="text_timer_6" class="for_text_4">printf("LoopNum=%d\n",LoopNum);</p>
+                <p class="for_text_2">}</p>
+                <p id="text_timer_7" class="for_text_2">printf("outside Sum=%d\n",Sum);</p>
+                <p id="text_timer_8" class="for_text_2">printf("outside LoopNum=%d\n",LoopNum);</p>
+                <p id="text_timer_9" class="for_text_2">return 0;</p>
+                <p>}</p>
+            </div>
+            <div class="table table_cmd">
+                <div class="table_cmd_header">
+                    <img class="table_cmd_header_icon" src="https://raw.githubusercontent.com/0obriano0/Cinfo/master/cmd_icon.png">
+                    <span>命令提示字元</span>
+                    <img class="table_cmd_header_button" src="https://raw.githubusercontent.com/0obriano0/Cinfo/master/cmd_button.png">
+                </div>
+                <div class="table_cmd_body">
+                    <p id="for_cmd_timer_1">Sum=0</p>
+                    <p id="for_cmd_timer_2">LoopNum=0</p>
+                    <p id="for_cmd_timer_3">Sum=1</p>
+                    <p id="for_cmd_timer_4">LoopNum=1</p>
+                    <p id="for_cmd_timer_5">Sum=3</p>
+                    <p id="for_cmd_timer_6">LoopNum=2</p>
+                    <p id="for_cmd_timer_7">outside Sum=3</p>
+                    <p id="for_cmd_timer_8">outside LoopNum=3</p>
+                </div>
+            </div>
+            <div class="table table_box">
+                <div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <p id="demo"></p>
+
+<script>
+</script>
+    </body>
+</html>

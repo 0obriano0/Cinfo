@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.table{
+    float:left;
+    width:98%;
+    box-sizing:border-box;
+    margin:1%;
+}
+.table_code{
+    background-color:#fff;
+}
+.table_box{
+    position: relative;
+}
+.table_box div{
+    position: absolute;
+    top: -80px;
+    right: 20%;
+}
+@media screen and (max-width: 670px){
+    .table_box div{
+        right: 40%;
+    } 
+}
+@media screen and (max-width: 330px){
+    .table_cmd .table_cmd_header span{
+        visibility:hidden;
+    }
+    .table_box div{
+        display:none;
+    }
+}
+.table_cmd{
+    background-color:#000;
+    color:#fff;
+}
+.table_cmd .table_cmd_header{
+    position:relative;
+    box-sizing:border-box;
+    padding:0.5%;
+    height:25px;
+    font-size:0.7em;
+}
+.table_cmd .table_cmd_header img{
+    height:100%;
+}
+.table_cmd .table_cmd_header img.table_cmd_header_button{
+    position:absolute;
+    right:0;
+}
+.table_cmd .table_cmd_body{
+    padding:1.5%;
+    min-height:100px;
+}
+.table_cmd .table_cmd_body .cmd_hide{
+    visibility:hidden;
+}
+#for_table{
+    position:relative;
+    min-height:300px;
+    width:100%;
+    overflow: hidden;
+}
+#for_table > div p{
+    font-size:1em;
+    margin-bottom: 0px;
+    animation-direction:normal;
+}
+.for_text_2{
+    margin-left: 2em;
+}
+.for_text_4{
+    margin-left: 4em;
+}
+#for_table .for_text_show{
+    background: #0101ff; color:#fff;
+}
+.box{
+    position:relative;
+}
+.box:before{
+    content:'';
+    position:absolute;
+    z-index:2;
+    top:60px;
+    left:50px;
+    width:50px;
+    height:50px;
+    background:#c00;
+    border-radius:0;
+    transform: rotate(45deg);
+    -webkit-animation:box .5s linear infinite ; 
+}
+@-webkit-keyframes box{
+    0%{
+        top:50px;
+        transform: rotate(0deg);
+    }
+    20%{
+        border-radius:2px;
+    }
+    50%{
+        top:80px; 
+        transform: rotate(45deg);
+        border-bottom-right-radius:25px;
+    }
+    80%{
+        border-radius:2px;
+    }
+    100%{
+        top:50px;
+        transform: rotate(90deg);
+    }
+}
+.box:after{
+    content:'';
+    position:absolute;
+    z-index:1;
+    top:128px;
+    left:52px;
+    width:44px;
+    height:3px;
+    background:#eaeaea;
+    border-radius:100%;
+    -webkit-animation:shadow .5s linear infinite ; 
+}
+@-webkit-keyframes shadow{
+    0%,100%{
+        left:54px;
+        width:40px;
+        background:#eaeaea;
+    }
+    50%{
+        top:126px;
+        left:50px;
+        width:50px;
+        height:7px;
+        background:#eee;
+    }
+}
